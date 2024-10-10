@@ -3,6 +3,6 @@ export default function () {
     const title = document.createElement('h1');
     title.textContent = "Best of"
     title.style.fontSize = "4rem"
-    body.appendChild(title);
+    body.textContent = "FUCK"
 
 } 
