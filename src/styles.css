@@ -1,12 +1,30 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 *{
     padding: 0;
     margin: 0;
 }
+
+img{
+    height: 3rem;
+    filter: invert(94%) sepia(68%) saturate(85%) hue-rotate(266deg) brightness(108%) contrast(105%);
+}
+
+button{
+    border-radius: 20%;
+}
+
 header{
-    height: 8vh;
+    display:flex;
+    padding:5px;
+    justify-content: space-evenly;
+    height: 5vh;
+    background-color: black;
     text-align:center;
-    background-color: blanchedalmond;
+   
+    
 }
 
 body{
@@ -21,34 +39,45 @@ body{
     );
   }
  
+
   
 
 #content{
-    height:89vh;
-    display: flex;
-    color:red;
+    height:91vh;
+
+    color: white;
     text-align: center;
 }
 
-.blackSpoon, .whiteSpoon{
-    font-size: 3rem;
-    width:50%;
+.blackSpoon{
+    font-family: "Abril Fatface";
+    font-size: 8vw;
+    width:100%;
+   
     
 }
 
+.bestOf{
+    font-family: "Bebas Neue";
+    color: gold;
+    font-size: 9vw;
+    margin-bottom: -1vh;
+  
+}
+
 .blackSpoon{
-    color:white;
-    text-align: end;
+    text-align: center;
+    mix-blend-mode: difference;
 
 }
 
-.whiteSpoon{
-    color: black;
-    text-align: start;
-}
+
 
 footer{
+    text-align: end;
+    padding-right: 10px;
+    padding-top: 5px;
     background-color: white;
     height: 3vh;
-    color:whitesmoke;
+    color: black;
 }

@@ -1,22 +1,22 @@
 import "./styles.css"
 import content from "./content.js"
 
-
+let tab = 1
 console.log("js works");
-//content();
+content();
+
+//if button menu pressed
+//tab = 2
+
+//if about is pressed
+//tab = 3
 
 const body = document.querySelector("#content");
-let angle = 45
 
-document.addEventListener('mousemove', logKey);
 
-function logKey(e){
-    
-    angle = 50 + ((e.clientX/body.clientWidth)*90)
-    console.log(angle);
-    body.style.background = "linear-gradient("+angle+"deg,#1c1c1c 0%,black 50%,white 50%,whitesmoke 100%)"
 
-}
+
+//document.removeEventListener('mousemove', logKey);
 
 
 
