@@ -26,7 +26,7 @@ export default function () {
         body.replaceChildren()
         document.removeEventListener('mousemove', logKey);
         
-       // menu();
+        menu();
         
     })
     next.textContent = "View Menu Here";
