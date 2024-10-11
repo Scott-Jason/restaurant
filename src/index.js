@@ -1,25 +1,25 @@
-import "./styles.css"
-import content from "./content.js"
-import menu from "./menu.js"
+import "./styles.css";
+import content from "./content.js";
+import menu from "./menu.js";
+import about from "./about.js";
 
-
-let tab = 1
-console.log("js works");
 content();
 
-//if button menu pressed
-//tab = 2
-
-//if about is pressed
-//tab = 3
-
 const body = document.querySelector("#content");
+const home = document.querySelector(".home");
+const book = document.querySelector(".book");
+const pan = document.querySelector(".pan");
 
+home.addEventListener("click", () => {
+    body.replaceChildren();
+    content();
+})
+book.addEventListener("click", () => {
+    body.replaceChildren();
+    menu();
+})
 
-
-
-//document.removeEventListener('mousemove', logKey);
-
-
-
-
+pan.addEventListener("click", () =>{
+    body.replaceChildren();
+    about();
+})

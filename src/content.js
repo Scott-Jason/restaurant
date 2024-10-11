@@ -2,7 +2,7 @@ import menu from "./menu.js"
 
 export default function () {
     document.addEventListener('mousemove', logKey);
-    let angle = 70
+    let angle = 70;
     function logKey(e){
         angle = 40 + ((e.clientX/body.clientWidth)*100)
         console.log(angle);
@@ -26,10 +26,8 @@ export default function () {
         body.replaceChildren()
         document.removeEventListener('mousemove', logKey);
         
-        menu();
+       // menu();
         
-
-
     })
     next.textContent = "View Menu Here";
     next.classList.add("next");
