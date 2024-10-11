@@ -1,5 +1,7 @@
 import "./styles.css"
 import content from "./content.js"
+import menu from "./menu.js"
+
 
 let tab = 1
 console.log("js works");
